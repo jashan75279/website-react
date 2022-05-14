@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&family=Josefin+Sans:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    font-size: 62.5%;
+    padding: 0;
+}
+
+.contactUs{
+    font-family: 'Baloo Tamma 2', cursive;
+    background: linear-gradient( #0e3959 0%, #77aad1 30%,#03a9f5 30% ,#03a9f5 100%);
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 4rem 10rem;
+}
+.contactUs .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.contactUs .title h2{
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+.form{
+    grid-area: form;
+}
+.info{
+    grid-area: info;
+}
+.map{
+    grid-area: map;
+}
+.contact{
+    padding: 4rem;
+    background: #fff;
+}
+
+
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: "form info" "form map";
+    grid-gap: 2rem;
+    margin-top: 2rem;
+    
+} 
+.contact h3{
+     color: #0e3959;
+     font-weight: 500;
+     font-size: 1.4rem;
+     margin-bottom: 1rem;
+}
+
+/* form */
+.formBox{
+    position: relative;
+    width: 100%;
+}
+.formBox .row50{
+    display: flex;
+    gap: 2rem;
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 50%;
+}
+
+.formBox .row100 .inputBox{
+    width: 100%;
+}
+.inputBox span{
+    font-size: 1.5rem;
+    color: #18b7ff;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.inputBox input{
+    padding: 1rem;
+    font-size: 1.1rem;
+    outline: none;
+    border: 1px solid #333;
+}
+.inputBox textarea{
+    padding: 1rem;
+    font-size: 1.1rem;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 15rem;
+    margin-bottom: 1rem;
+
+}
+.inputBox input[type="submit"]{
+    background: #ff578b;
+    color: #fff;
+    border: none;
+    font-size: 1.1rem;
+    max-width: 12rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 1.4rem 1.5rem;
+}
+.inputBox ::placeholder{
+    color: #999;
+    font-weight: 600;
+    font-weight: 1.4rem;
+}
+
+/* info */
+.info{
+      /* margin-top: 9rem; */
+    background: #0e3959;
+}
+.info h3{
+    color: #fff;
+}
+
+
+.info .infoBox div{
+    display: flex;
+    align-items: center;
+    /* margin-top: rem; */
+    /* margin: 1rem; */
+}
+.info .infoBox div span{
+    min-width: 4rem;
+    height: 4rem;
+    color: #fff;
+    background: #18b7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+}
+
+.info .infoBox div p{
+    text-transform: capitalizes;
+    font-size: 1.5rem;
+    color: #fff;
+
+}
+
+
+.sci{
+    margin-top: 4rem;
+    display: flex;
+}
+
+.sci li{
+    list-style: none;
+    margin: auto;
+
+}
+
+.sci li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 4rem;
+    color: #ccc;
+}
+.sci li a:hover{
+    color: #fff;
+}
+.map{
+    padding: 0;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/* responsive design  */
+
+@media(max-width:991px)
+{
+    body{
+        background-color: #03a9f5;
+    }
+    .contactUs{
+        padding: 2rem;
+    }
+    .box{
+        
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "form"
+        "info"
+        "map";
+        
+    }
+    .map {
+        min-height: 30rem;
+        padding: 0px;
+    }
+    .formBox .row50{
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+    .inputBox{
+        width: 100%;
+    }
+    .contact{
+        padding: 3rem;
+    }
+
+}
+
+.table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* height: auto; */
+    
+
+}
+.table li {
+    list-style: none;
+}
+.table li a{
+    border-radius: 1rem;
+    padding: .5rem;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.table li a:hover{
+    background-color: white;
+    color: #03a9f5;
+}

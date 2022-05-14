@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.indirect-donation .common-content h2{
+    font-size: 2.4rem;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 2.5rem;
+   
+
+}
+.common-content{
+    margin-top: 4.5rem;
+}
+.indirect-donation .common-content p{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+
+.common-content a{
+    display: block;
+    margin: 2rem auto;
+    width: 14rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgb(29, 14, 239);
+    text-decoration: none;
+    text-align: center;
+}
+
+.donation-parts1{
+    /* border: 2px solid black; */
+    margin: 1rem;
+    width: auto;
+    height: 30rem;
+    background-image: linear-gradient( to left ,rgba(0, 0, 0, 0.708),rgba(0, 0, 0, 0.918)), url('https://cdn.pixabay.com/photo/2021/03/22/01/58/monk-6113501_960_720.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.donation-parts2{
+    border: 2px solid black;
+    margin: 1rem;
+    width: auto;
+    height: 30rem;
+    background: linear-gradient( to left ,rgba(0, 0, 0, 0.708),rgba(0, 0, 0, 0.918)),url('https://cdn.pixabay.com/photo/2021/03/22/01/58/monk-6113501_960_720.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.donation-parts3{
+    border: 2px solid black;
+    margin: 1rem;
+    width: auto;
+    height: 30rem;
+    background: linear-gradient( to left ,rgba(0, 0, 0, 0.708),rgba(0, 0, 0, 0.918)),url('https://cdn.pixabay.com/photo/2021/03/22/01/58/monk-6113501_960_720.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}

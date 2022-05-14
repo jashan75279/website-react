@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:300,400|Oswald:400,700');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+
+
+/**************/
+
+.text-center {
+    font-size: 62.5%;
+
+    position: relative;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 4rem;
+    /* border-bottom: 2px solid blue; */
+}
+.text-center h2::after {
+    display: block;
+      content: '';
+     width: 100%;
+     height: 1px;
+     background: black;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+   }
+.project-counter-wrp {
+    margin-bottom: 3rem;
+    background: #fff
+}
+
+.project-counter-wrp ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-counter-wrp li {
+    width: 32%;
+    height: 100%;
+    padding: 3rem 0px;
+    text-align: center;
+    transition: 0.2s linear;
+}
+
+.project-counter-wrp li:hover {
+    transform: scale(1.1);
+}
+
+.project-counter-wrp li:nth-child(1) {
+    background: rgb(16, 31, 46);
+}
+
+.project-counter-wrp li:nth-child(2) {
+    background: rgb(18, 34, 51);
+}
+
+.project-counter-wrp li:nth-child(3) {
+    background: rgb(21, 38, 56);
+}
+
+.project-counter-wrp li p.number {
+    font-size: 4rem;
+    padding: 0;
+    font-weight: bold;
+}
+
+.project-counter-wrp li p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 1rem;
+    font-family: 'Open Sans';
+}
+
+.project-counter-wrp li span {
+    width: 6rem;
+    background: rgba(255, 255, 255, 0.8);
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+}
+
+.project-counter-wrp .component{
+    cursor: pointer;
+    vertical-align: middle;
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.8);
+}
